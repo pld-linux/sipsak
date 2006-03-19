@@ -1,4 +1,5 @@
-Summary:	small comand line tool for developers and administrators of SIP applications
+Summary:	Small comand line tool for developers and administrators of SIP applications
+Summary(pl):	Ma³e narzêdzie linii poleceñ dla programistów i administratorów aplikacji SIP
 Name:		sipsak
 Version:	0.9.6
 Release:	0.1
@@ -11,7 +12,20 @@ BuildRequires:	openssl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-sipsak is a command line tool for performing various tests on Session Initiation Protocol (SIP) applications and devices. It can make several different tests, send the contents of a file, and interpret and react on the responses. It supports (de-) registration with given contact URIs and digest authentication.
+sipsak is a command line tool for performing various tests on Session
+Initiation Protocol (SIP) applications and devices. It can make
+several different tests, send the contents of a file, and interpret
+and react on the responses. It supports (de-) registration with given
+contact URIs and digest authentication.
+
+%description -l pl
+sipsak to dzia³aj±ce z linii poleceñ narzêdzie do wykonywania ró¿nych
+testów na aplikacjach i urz±dzeniach korzystaj±cych z protoko³u SIP
+(Session Initiation Protocol - protoko³u nawi±zywania sesji). Potrafi
+wykonywaæ kilka ró¿nych testów, wysy³aæ zawarto¶æ plików,
+interpretowaæ i reagowaæ na odpowiedzi. Obs³uguje (de-)rejestrowanie z
+podanym URI kontaktowym i uwierzytelnianie digest.
+
 %prep
 %setup -q
 
@@ -31,6 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog README TODO NEWS
 %attr(755,root,root) %{_bindir}/sipsak
 %{_mandir}/man1/*
-%doc ChangeLog README TODO NEWS
