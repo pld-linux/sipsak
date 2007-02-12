@@ -1,5 +1,5 @@
 Summary:	Small comand line tool for developers and administrators of SIP applications
-Summary(pl):	Ma³e narzêdzie linii poleceñ dla programistów i administratorów aplikacji SIP
+Summary(pl.UTF-8):   MaÅ‚e narzÄ™dzie linii poleceÅ„ dla programistÃ³w i administratorÃ³w aplikacji SIP
 Name:		sipsak
 Version:	0.9.6
 Release:	0.1
@@ -18,12 +18,12 @@ several different tests, send the contents of a file, and interpret
 and react on the responses. It supports (de-) registration with given
 contact URIs and digest authentication.
 
-%description -l pl
-sipsak to dzia³aj±ce z linii poleceñ narzêdzie do wykonywania ró¿nych
-testów na aplikacjach i urz±dzeniach korzystaj±cych z protoko³u SIP
-(Session Initiation Protocol - protoko³u nawi±zywania sesji). Potrafi
-wykonywaæ kilka ró¿nych testów, wysy³aæ zawarto¶æ plików,
-interpretowaæ i reagowaæ na odpowiedzi. Obs³uguje (de-)rejestrowanie z
+%description -l pl.UTF-8
+sipsak to dziaÅ‚ajÄ…ce z linii poleceÅ„ narzÄ™dzie do wykonywania rÃ³Å¼nych
+testÃ³w na aplikacjach i urzÄ…dzeniach korzystajÄ…cych z protokoÅ‚u SIP
+(Session Initiation Protocol - protokoÅ‚u nawiÄ…zywania sesji). Potrafi
+wykonywaÄ‡ kilka rÃ³Å¼nych testÃ³w, wysyÅ‚aÄ‡ zawartoÅ›Ä‡ plikÃ³w,
+interpretowaÄ‡ i reagowaÄ‡ na odpowiedzi. ObsÅ‚uguje (de-)rejestrowanie z
 podanym URI kontaktowym i uwierzytelnianie digest.
 
 %prep
