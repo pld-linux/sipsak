@@ -1,5 +1,5 @@
 Summary:	Small comand line tool for developers and administrators of SIP applications
-Summary(pl.UTF-8):   Małe narzędzie linii poleceń dla programistów i administratorów aplikacji SIP
+Summary(pl.UTF-8):	Małe narzędzie linii poleceń dla programistów i administratorów aplikacji SIP
 Name:		sipsak
 Version:	0.9.6
 Release:	0.1
