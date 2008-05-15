@@ -2,7 +2,7 @@ Summary:	Small comand line tool for developers and administrators of SIP applica
 Summary(pl.UTF-8):	Małe narzędzie linii poleceń dla programistów i administratorów aplikacji SIP
 Name:		sipsak
 Version:	0.9.6
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://download.berlios.de/sipsak/%{name}-%{version}-1.tar.gz
