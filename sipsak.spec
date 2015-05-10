@@ -2,12 +2,14 @@ Summary:	Small comand line tool for developers and administrators of SIP applica
 Summary(pl.UTF-8):	Małe narzędzie linii poleceń dla programistów i administratorów aplikacji SIP
 Name:		sipsak
 Version:	0.9.6
-Release:	2
+Release:	3
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://download.berlios.de/sipsak/%{name}-%{version}-1.tar.gz
 # Source0-md5:	c4eb8e282902e75f4f040f09ea9d99d5
+Patch0:		x32.patch
 URL:		http://sipsak.org/
+BuildRequires:	c-ares-devel
 BuildRequires:	openssl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,8 +30,12 @@ podanym URI kontaktowym i uwierzytelnianie digest.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure \
 	--disable-gnutls
 %{__make}

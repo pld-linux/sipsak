@@ -1,0 +1,20 @@
+--- sipsak-0.9.6/acinclude.m4~	2006-01-28 22:11:34.000000000 +0100
++++ sipsak-0.9.6/acinclude.m4	2015-05-10 15:55:06.585422729 +0200
+@@ -43,7 +43,7 @@
+ 	ares_libdir=NONE
+ 	ares_libcall=NONE
+ 	ares_incdirs="/usr/include /usr/local/include /sw/include"
+-	ares_libdirs="/usr/lib64 /usr/lib /usr/local/lib64 /usr/local/lib /sw/lib"
++	ares_libdirs="/usr/libx32 /usr/lib64 /usr/lib /usr/local/lib64 /usr/local/lib /sw/lib"
+ 	ares_libexten=".so .dylib .a"
+ 
+ 	for dir in $ares_incdirs; do
+@@ -98,7 +98,7 @@
+ 	ruli_incdir=NONE
+ 	ruli_libdir=NONE
+ 	ruli_incdirs="/usr/include /usr/local/include /sw/include"
+-	ruli_libdirs="/usr/lib64 /usr/lib /usr/local/lib64 /usr/local/lib /sw/lib"
++	ruli_libdirs="/usr/libx32 /usr/lib64 /usr/lib /usr/local/lib64 /usr/local/lib /sw/lib"
+ 	ruli_libexten=".so .dylib .a"
+ 
+ 	for dir in $ruli_incdirs; do
