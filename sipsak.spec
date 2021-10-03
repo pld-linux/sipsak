@@ -1,15 +1,13 @@
-%define	snap	20170713
-%define	rel	1
 Summary:	Small comand line tool for developers and administrators of SIP applications
 Summary(pl.UTF-8):	Małe narzędzie linii poleceń dla programistów i administratorów aplikacji SIP
 Name:		sipsak
-Version:	0.9.6
-Release:	4.%{snap}.%{rel}
+Version:	0.9.8.1
+Release:	1
 License:	GPL
 Group:		Networking/Utilities
 # https://github.com/nils-ohlmeier/sipsak
-Source0:	http://ftp.debian.org:/debian/pool/main/s/sipsak/%{name}_%{version}+git%{snap}.orig.tar.gz
-# Source0-md5:	a7f0f8ca2076939cd9ceba2ce1a80889
+Source0:	http://ftp.debian.org:/debian/pool/main/s/sipsak/%{name}_%{version}.orig.tar.gz
+# Source0-md5:	b07780ef654cfe1687d6ecc7f617bc7a
 URL:		http://sipsak.org/
 BuildRequires:	c-ares-devel
 BuildRequires:	openssl-devel
@@ -31,7 +29,7 @@ interpretować i reagować na odpowiedzi. Obsługuje (de-)rejestrowanie z
 podanym URI kontaktowym i uwierzytelnianie digest.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 sed -i -e 's#gnutls#no-gnutls#g' configure.ac
 
 %build
